@@ -10,6 +10,7 @@
 		A97650FA1E1470D80096B724 /* tweetsEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97650F01E1470D70096B724 /* tweetsEngine.framework */; };
 		A97650FF1E1470D80096B724 /* tweetsEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97650FE1E1470D80096B724 /* tweetsEngineTests.swift */; };
 		A97651011E1470D80096B724 /* tweetsEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = A97650F31E1470D70096B724 /* tweetsEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A976510B1E1474E70096B724 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976510A1E1474E70096B724 /* Tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		A97650F91E1470D80096B724 /* tweetsEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tweetsEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97650FE1E1470D80096B724 /* tweetsEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tweetsEngineTests.swift; sourceTree = "<group>"; };
 		A97651001E1470D80096B724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A976510A1E1474E70096B724 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				A97650F31E1470D70096B724 /* tweetsEngine.h */,
 				A97650F41E1470D70096B724 /* Info.plist */,
+				A976510A1E1474E70096B724 /* Tweet.swift */,
 			);
 			path = tweetsEngine;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					A97650EF1E1470D70096B724 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = M72ZRB7GL2;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					A97650F81E1470D80096B724 = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A976510B1E1474E70096B724 /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		A97651051E1470D80096B724 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M72ZRB7GL2;
@@ -334,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi-Wiz.tweetsEngine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +348,7 @@
 		A97651061E1470D80096B724 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M72ZRB7GL2;
@@ -360,6 +368,7 @@
 		A97651081E1470D80096B724 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = M72ZRB7GL2;
 				INFOPLIST_FILE = tweetsEngineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +381,7 @@
 		A97651091E1470D80096B724 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = M72ZRB7GL2;
 				INFOPLIST_FILE = tweetsEngineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
