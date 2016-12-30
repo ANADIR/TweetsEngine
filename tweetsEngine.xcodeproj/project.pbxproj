@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6035ABFD7519DE4530827204 /* Pods_tweetsEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F9F9218853EA42CAA3B81D /* Pods_tweetsEngine.framework */; };
+		A930846C1E1657C800386652 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A930846B1E1657C800386652 /* Tweet.swift */; };
+		A930846E1E16581400386652 /* TwitterOAuthClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A930846D1E16581400386652 /* TwitterOAuthClass.swift */; };
+		A93084721E165A7700386652 /* searchTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93084711E165A7700386652 /* searchTwitter.swift */; };
+		A93084751E165B3300386652 /* getBase64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93084741E165B3300386652 /* getBase64.swift */; };
 		A97650FA1E1470D80096B724 /* tweetsEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97650F01E1470D70096B724 /* tweetsEngine.framework */; };
 		A97650FF1E1470D80096B724 /* tweetsEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97650FE1E1470D80096B724 /* tweetsEngineTests.swift */; };
 		A97651011E1470D80096B724 /* tweetsEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = A97650F31E1470D70096B724 /* tweetsEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A976510B1E1474E70096B724 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976510A1E1474E70096B724 /* Tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +28,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		535FBB1F5277B604F35A7D5B /* Pods_tweetsEngineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tweetsEngineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5460BD82D6A60DCB3EF14C4B /* Pods-tweetsEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tweetsEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tweetsEngine/Pods-tweetsEngine.debug.xcconfig"; sourceTree = "<group>"; };
+		67F9F9218853EA42CAA3B81D /* Pods_tweetsEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tweetsEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A930846B1E1657C800386652 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		A930846D1E16581400386652 /* TwitterOAuthClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterOAuthClass.swift; sourceTree = "<group>"; };
+		A93084711E165A7700386652 /* searchTwitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchTwitter.swift; sourceTree = "<group>"; };
+		A93084741E165B3300386652 /* getBase64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getBase64.swift; sourceTree = "<group>"; };
 		A97650F01E1470D70096B724 /* tweetsEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = tweetsEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97650F31E1470D70096B724 /* tweetsEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tweetsEngine.h; sourceTree = "<group>"; };
 		A97650F41E1470D70096B724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A97650F91E1470D80096B724 /* tweetsEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tweetsEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97650FE1E1470D80096B724 /* tweetsEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tweetsEngineTests.swift; sourceTree = "<group>"; };
 		A97651001E1470D80096B724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A976510A1E1474E70096B724 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		B619A305C4C2DC4473E5DA68 /* Pods-tweetsEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tweetsEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-tweetsEngine/Pods-tweetsEngine.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6035ABFD7519DE4530827204 /* Pods_tweetsEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,12 +64,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6871B7F4C5E2A6C5DFFBF9AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5460BD82D6A60DCB3EF14C4B /* Pods-tweetsEngine.debug.xcconfig */,
+				B619A305C4C2DC4473E5DA68 /* Pods-tweetsEngine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A930846A1E16573700386652 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A930846D1E16581400386652 /* TwitterOAuthClass.swift */,
+				A930846B1E1657C800386652 /* Tweet.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A93084731E165B1500386652 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A93084741E165B3300386652 /* getBase64.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		A97650E61E1470D70096B724 = {
 			isa = PBXGroup;
 			children = (
 				A97650F21E1470D70096B724 /* tweetsEngine */,
 				A97650FD1E1470D80096B724 /* tweetsEngineTests */,
 				A97650F11E1470D70096B724 /* Products */,
+				6871B7F4C5E2A6C5DFFBF9AB /* Pods */,
+				ECC4F6C7FDD6A5452DEE07A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +113,11 @@
 		A97650F21E1470D70096B724 /* tweetsEngine */ = {
 			isa = PBXGroup;
 			children = (
+				A93084731E165B1500386652 /* Extensions */,
+				A930846A1E16573700386652 /* Model */,
+				A93084711E165A7700386652 /* searchTwitter.swift */,
 				A97650F31E1470D70096B724 /* tweetsEngine.h */,
 				A97650F41E1470D70096B724 /* Info.plist */,
-				A976510A1E1474E70096B724 /* Tweet.swift */,
 			);
 			path = tweetsEngine;
 			sourceTree = "<group>";
@@ -87,6 +129,15 @@
 				A97651001E1470D80096B724 /* Info.plist */,
 			);
 			path = tweetsEngineTests;
+			sourceTree = "<group>";
+		};
+		ECC4F6C7FDD6A5452DEE07A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67F9F9218853EA42CAA3B81D /* Pods_tweetsEngine.framework */,
+				535FBB1F5277B604F35A7D5B /* Pods_tweetsEngineTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,10 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A97651041E1470D80096B724 /* Build configuration list for PBXNativeTarget "tweetsEngine" */;
 			buildPhases = (
+				179BB74F925A9846E04A76BE /* [CP] Check Pods Manifest.lock */,
 				A97650EB1E1470D70096B724 /* Sources */,
 				A97650EC1E1470D70096B724 /* Frameworks */,
 				A97650ED1E1470D70096B724 /* Headers */,
 				A97650EE1E1470D70096B724 /* Resources */,
+				76289FB2AD98198A7B72C927 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,12 +250,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		179BB74F925A9846E04A76BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76289FB2AD98198A7B72C927 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tweetsEngine/Pods-tweetsEngine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A97650EB1E1470D70096B724 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A976510B1E1474E70096B724 /* Tweet.swift in Sources */,
+				A930846E1E16581400386652 /* TwitterOAuthClass.swift in Sources */,
+				A93084751E165B3300386652 /* getBase64.swift in Sources */,
+				A930846C1E1657C800386652 /* Tweet.swift in Sources */,
+				A93084721E165A7700386652 /* searchTwitter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +415,7 @@
 		};
 		A97651051E1470D80096B724 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5460BD82D6A60DCB3EF14C4B /* Pods-tweetsEngine.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -347,6 +437,7 @@
 		};
 		A97651061E1470D80096B724 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B619A305C4C2DC4473E5DA68 /* Pods-tweetsEngine.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -410,6 +501,7 @@
 				A97651061E1470D80096B724 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A97651071E1470D80096B724 /* Build configuration list for PBXNativeTarget "tweetsEngineTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +510,7 @@
 				A97651091E1470D80096B724 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
